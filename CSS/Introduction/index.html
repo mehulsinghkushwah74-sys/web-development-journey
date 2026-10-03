@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Element selector */
+        /* div{
+            background-color: red;
+        } */
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        .red>p {
+            background-color: aqua;
+        }
+
+        #green p {
+            background-color: aqua;
+        }
+
+        /* universal selector */
+        * {
+            /* sab ek sath chipak gye */
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* Pseudo selector */
+        a:visited {
+            color: brown;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NOTE :
+    :hover
+    Styles elements when the cursor moves over them. Standard for buttons, navigation links, and clickable cards.
+    .btn:hover {
+    background-color: #1d4ed8;
+    }
+
+    focus:
+    Highlights active form inputs when clicked or tabbed into.
+    input:focus {
+    border-color: #2563eb;
+    }
+
+    :focus-visible:
+    The modern accessibility standard. Applies focus outlines only when navigated via keyboard (Tab), preventing outline
+    rings
+    during mouse clicks.
+    button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    }
+
+    :active
+    Triggers during the click/press interaction (the split second between mouse-down and mouse-up) to give tactile
+    feedback.
+    .btn:active {
+    transform: scale(0.98);
+    }
+
+    :nth-child()
+    Used to target recurring elements without adding extra classes (e.g., striped tables, grid items).
+    /* Zebra striping */
+    tr:nth-child(even) {
+    background-color: #f8fafc;
+    }
+
+    :first-child & :last-child
+    Commonly used to clean up spacing and dividers across list items.
+    /* Zebra striping */
+    tr:nth-child(even) {
+    background-color: #f8fafc;
+    }
+
+    :disabled & :checked
+    Core selectors for interactive form controls.
+    button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    }
+
+    input[type="checkbox"]:checked {
+    accent-color: #2563eb;
+    }
+
+    :root
+    Matches the top-level element (<html>). The universal standard for declaring global CSS variables/design tokens.
+    :root {
+    --primary-color: #2563eb;
+    --radius: 8px;
+    }
+
+    :not():
+    Excludes elements matching a selector (e.g., applying borders to all items except the last).
+    /* Add divider to all items except the last */
+    .card:not(:last-child) {
+    margin-bottom: 1rem;
+    }
+
+    :has():
+    The modern parent selector. Styles a container based on its children.
+    /* Style form wrapper if it contains an invalid input */
+    .form-group:has(input:invalid) {
+    border-color: #ef4444;
+    }
+
+    ::before & ::after
+    By far the most common pseudo-elements in web design. They inject decorative elements, badges, overlays, and icons
+    without adding bloat to HTML markup
+    /* Decorative dot before active status */
+    .status-active::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #22c55e;
+    margin-right: 6px;
+    }
+
+    ::placeholder
+    Controls the font, opacity, and color of hint text inside text inputs and textareas.
+    input::placeholder {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    }
+
+    ::selection
+    Customizes text highlight color when users drag-select text on your site.
+    ::selection {
+    background-color: #2563eb;
+    color: #ffffff;
+    }
+
+    ::backdrop
+    Styles the overlay behind native modal <dialog> elements or full-screen video.
+    dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    } -->
+
+
+        <div class="red">I am a div
+            <p>Hello my name is mehul</p>
+        </div>
+        <div id="green">I am other div
+            <article>
+                <p>Hello my name is mehul</p>
+
+            </article>
+        </div>
+        <a href="https://google.com">go to Google</a>
+        <a href="https://facebook2.com">go to Facebook</a>
+</body>
+
+</html>

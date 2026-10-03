@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        #box1 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            /* The original height of the box is sum of the height of box , twice of padding and twice of border  */
+            box-sizing: border-box;
+            /* if we use box sizing : border box isse ye hota hai ki height , padding and border ko jod kr 200 px hoga but without using this it exceed the 200 px. */
+
+        }
+
+        #box2 {
+            color: blue;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        /* NOTE : Margin collapse matlb ki 2 container ki margin 25 and 25 hai toh ek hi baar 25 ki margin lagegi and if one has a margin of 25 and other has 35 then a single 35 margin will show */
+    </style>
+</head>
+
+<body>
+    <div class="box1" id="box1">Hello my name is mehul</div>
+    <div class="box1" id="box2">Hello my name is mehul</div>
+</body>
+
+</html>

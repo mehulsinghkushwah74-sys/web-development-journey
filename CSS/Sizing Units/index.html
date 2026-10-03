@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .box{
+            background-color: aqua;
+            /* width: 1536px; */
+            width: 100vw; /* iska mtlb ye hota hai jis bhi system ki view port width hai uski 100% le lega.  */            
+            height: 10vh;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: rgb(0, 255, 217);
+            width: 80vw; /* iska mtlb ye hota hai jis bhi system ki view port width hai uska utna percent le lega.  */
+            margin:20px auto; /* isse ye hota hai ki jo left me margin hota vhi left me jayega let say if we apply a width of 80vw so if we don't apply the margin: auto; then the 20vw space will go to the right side if we apply this then 10vw on left and 10 vw on right */
+            /* ye jo aage 20px hai iska matlb hai ki top and bottom se 20 px margin de do and left and right se auto.  */
+            height: 80vh;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 2px solid black;
+            
+        }
+        .box1 p{
+            /* font-size: 2em; */
+            /* em ki units ka mtlb ye hota hai ki jo paragraph font size inhibit krega from its parents uska unta time kr dena for example parent font size is 18px and paragraph has 2 em which means that p will get 36 px font size  */
+            font-size: 2rem;
+            /* rem ka mtlb ye hota hai jo roots se font size ki value hai uska utna times kr do example roots has font size 12 px so now p will get the size of 24 px  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, illum quos. Architecto vero nostrum pariatur labore consequuntur, veritatis impedit doloribus eveniet ullam ea quod explicabo. Magnam corrupti mollitia praesentium earum alias, hic suscipit quibusdam quisquam, neque omnis quasi sapiente nisi ipsam dolorum nemo minus maxime placeat totam sint facilis molestias error, accusantium quis! Iure, eius repudiandae?</p>
+    </div>
+</body>
+</html>

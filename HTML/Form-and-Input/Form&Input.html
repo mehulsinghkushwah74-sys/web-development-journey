@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input</title>
+</head>
+
+<body>
+    <h1>Form to apply for students information </h1>
+    <form action="post"> <!-- form is for the taking inputs from the user -->
+        <div>
+            <label for="username">Enter your username</label>
+            <!-- label tag is used for texting something from taking inputs -->
+            <input type="text" id="username" name="username" placeholder="Enter your usename">
+            <!-- input is for taking inputs from the user -->
+        </div>
+        <div>
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <!-- Radio buttons -->
+        <!-- Radio button are used when you want the user select only one option from a set of choices -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <!-- ye ek button provide kr rha hai and label text provide kr rha hai -->
+            <label for="male">Male</label> <!-- idhar humne label badme use kiya hai toh text badme aa rha hai -->
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <!-- NOTE : 1. Radio is for the buttons
+                        2. If the the id's of input and label is different then for selecting the option we have to strictly choose that button and if the id's are the same then only choosing the label text it choose that option
+                        3. Name same gender rakhne se wo sirf ek option ko hi choose kr skte  
+                        4. Placeholder is used to give a hint example when we click in and start typing , the hint appears then disappers-->
+        </div>
+        <!-- CheckBox -->
+        <div>
+            <input type="checkbox" id="subscirbe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <!-- TextAres -->
+        <div>
+            <label for="comment">Enter your comment</label> <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+             <!-- NOTE : 1. textarea gives us the area for text which also gives us control the height and width using rows and cols
+                         2. name is for server to identify the text example if we write a comment and send then how the server identify which is it so if we give the name to it then it is a able tp read from which the this text came. -->
+        </div>
+        <!-- Select -->
+         <div>
+            <label for="fruits">Select the Fruit Name</label>
+            <select name="fruits" id="fruits">   <!-- selecg tag is for giving the option and choose for the user -->
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+            </select>
+         </div>
+       
+    </form>
+    <!-- Attributes inside the input tag
+        type - Specifies the input type (text, password, checkbox, etc.)
+        name - Identifies the input when sending form data to a server
+        value - Sets the initial or submitted data
+        placeholder - Shows a temporary hint inside the box
+        id - Unique name used to connect with labels, CSS, or JavaScript
+        class - Assigns styling classes from CSS
+        required - Forces the user to fill the box before submitting
+        disabled - Grays out the box so the user cannot click or type
+        readonly - Lets the user see and copy text, but not edit it
+        maxlength - Sets the maximum number of characters allowed
+        minlength - Sets the minimum number of characters required
+        min - Sets the lowest allowed number or date
+        max - Sets the highest allowed number or date
+        step - Sets the number jump interval (e.g. step="5")
+        pattern - Uses a regular expression (regex) to check input format
+        autofocus - Automatically focuses the cursor in this box on page load
+        autocomplete - Turns browser auto-fill on or off (on/off)
+        checked - Pre-selects a checkbox or radio button
+        multiple - Allows selecting more than one file or email
+        accept - Limits which file types can be uploaded (e.g. .jpg, .png)
+        size - Controls the visible width of the input box in characters
+        list - Connects the input to a datalist for dropdown suggestions
+     -->
+
+    <!-- READ ME : How many attributes are inside the type 
+        text - Normal single-line text box
+        password - Hides letters with dots for security
+        email - For email addresses
+        number - For numbers only, has up and down arrows
+        tel - For telephone numbers
+        url - For website links
+        search - For search boxes
+        date - Calendar to pick day, month, and year
+        time - Clock to pick hour and minute
+        datetime-local - Picks both date and time together
+        month - Picks only month and year
+        week - Picks a week number and year
+        checkbox - Square box to check or uncheck
+        radio - Round button to pick one option
+        file - Button to upload files from your device
+        range - Slider bar to pick a number
+        color - Color picker box
+        button - Simple clickable button
+        submit - Button that sends the form data
+        reset - Button that clears the form
+        image - Uses an image as a submit button
+        hidden - Invisible box used to pass background data
+     -->
+
+</body>
+
+</html>
