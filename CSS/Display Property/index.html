@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            margin:10px;
+            padding: 10px;
+            /* display: inline; */
+            /* dislpay inline se ek block element ko inline element me change kr skte hai
+            using the display: inline; we can change a block a element into a inline element */
+            /* Display inline width ko increase krne se rokta hai so if use the display inline we cannot increase the width of the container  */
+            /* And the padding and margin top se nhi lgti  */
+            display: inline-block;
+            /* so ancounter the problem of display: inline; we use display:inline-block;  */
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            border: 2px solid black;
+            margin:10px;
+            display: inline-block;
+            padding: 10px;
+            display: none;
+            /* Using the display: none; we actually delete that box and also space is taken by other box  */
+            /* visibility: hidden; */
+            /* visibility: hidden; we use for that box is get hidden and the space get embeded */
+        }
+        .box2{
+            border: 2px solid black;
+            margin:10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NOTE : 
+        1. Basic / Box Generation Values
+        These control whether an element generates a box at all.
+
+        none: Removes the element from the document flow completely; it takes up zero space and its children are also not rendered.
+        contents: Makes the container invisible to layout—the element itself does not generate a box, but its children render as if they were direct children of the element's parent. 
+
+        2. Standard Outside Display Values
+        These define how the element behaves in normal flow relative to surrounding siblings.
+
+        block: Starts on a new line and stretches to fill the full width of its parent container. Accepts explicit width, height, margin, and padding.
+        inline: Flows along with surrounding text/inline elements. Ignores vertical width, height, margin-top, and margin-bottom.
+        inline-block: Flows horizontally inline with text, but respects box-model dimensions (width, height, vertical margins/padding).
+        run-in: Inserts the element as an inline box at the beginning of the next block box (rarely supported across modern browsers).
+
+        3. Layout Context Values (Inner Formatting)
+        These values turn the element into a specialized container for laying out its direct child elements.
+
+        flex: Creates a block-level flex container; children are laid out using Flexbox rules.
+        inline-flex: Creates an inline-level flex container.
+        grid: Creates a block-level grid container; children are placed inside a two-dimensional grid.
+        inline-grid: Creates an inline-level grid container.
+        flow-root: Generates a block box that establishes a new Block Formatting Context (BFC), cleanly clearing floats and containing child margins without overflow hacks.
+        math / inline-math: Formats contents according to MathML layout rules.
+
+        4. Table Layout Values
+        Emulates HTML table structure using standard CSS layout rules.
+
+        table: Behaves like an HTML <table> (block-level).
+        inline-table: Behaves like <table>, but flows inline like text.
+        table-row: Behaves like <tr>.
+        table-row-group: Behaves like <tbody>.
+        table-header-group: Behaves like <thead>.
+        table-footer-group: Behaves like <tfoot>.
+        table-cell: Behaves like <td> or <th>.
+        table-column: Behaves like <col>.
+        table-column-group: Behaves like <colgroup>.
+        table-caption: Behaves like <caption>.
+
+        5. List Values
+        list-item: Generates a block box alongside a pseudo-element marker (bullet or number), behaving like an HTML <li>.
+        inline list-item: Generates an inline box with a marker box. -->
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box1">
+        Another box
+    </div>
+    <span class="box2">
+        I am a good person
+    </span>
+</body>
+</html>
