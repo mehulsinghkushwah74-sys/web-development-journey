@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List using CSS</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;  /* list style se hum li ke andahr jo marker aata hai usse hum cahnge kr skte hai */
+            /* list-style-type:"h" ; */
+            background-color: yellow;
+            /* isse hume pta chlta hai ki marker list item de alg hai kyuki bgc sirf written part pr aaya hai marker chhut gya  */
+            /* agr hume isse andarr le jana hai toh hum list-style-position: inside;ka use krte hai  */
+            list-style-position: inside;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

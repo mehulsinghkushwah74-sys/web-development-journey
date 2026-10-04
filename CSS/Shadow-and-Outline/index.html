@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            width: 80vw;
+            margin: auto;
+            /* box-shadow:h-offset v-offet blur spread color inset ; */
+            /* NOTE : 
+                    h-offset and v-offset : determines the shadow's horizontal and vertical position.
+                    blur : The larger the value , the bluriier the shadow.
+                    spread : Expands or shrikns the shadow size.
+                    color : defines the shadow color.
+                    inset : Makes the shadow inner. */
+            box-shadow: 5px 5px 35px 10px rgb(0, 0, 0);
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 2px 2px 5px  black;
+            /* outline:width style color ; */
+            /* NOTE : width : sets the outline width
+                   style : determines the style of the outline such as solid, dotted, or dashed
+                   color : sets the outline color */
+                
+            outline: 2px dotted red;
+            outline-offset: 2px;
+        }
+        p{
+            text-shadow: 2px 2px 5px red;
+            outline: 2px dotted red;
+            outline-offset: 2px; /* this decide the distance btw the oulines without touching the containerv */
+        }
+        img{
+            width: 80vw;
+            margin-left: 10vw; 
+        }
+    </style>
+</head>
+<body>
+    <!-- NOTE : Position : Outlines visually appear similar,outline differ from border in a few ways. -->
+           
+    <div class="box">
+        I am a box
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit vero magni tempore quis perspiciatis enim ut molestias maxime? Rerum velit officiis illum ut iste unde accusantium, itaque, corporis et numquam quod mollitia nam architecto?</p>
+    <img src="photo.png" alt="">
+</body>
+</html>
