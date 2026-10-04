@@ -1,6 +1,7 @@
 # Web Development Fundamentals: HTML & CSS
 
 This repository contains my personal collection of code exercises, layout practice, and quizzes completed while learning frontend web development.
+
 📂 Repository Structure
 1. HTML/: Semantic tags, tables, forms, inputs, and inline vs. block elements.
 2. CSS/: Box model, display properties, sizing units, typography, and color styling.
