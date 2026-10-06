@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property</title>
+    <style>
+        .box{
+            width: 20vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* overflow: scroll; isse krne se ek scroll bar aa jata hai / */
+            overflow: auto;  /* iska mtlb ye hai ki agr overflow hoga toh scroll hoga or overflow nhi hoga toh scroll nhi ayega */
+            /* white-space: nowrap;
+            iska mtlb ye hai ki text ko ek hi row le le ana  */
+            /* overflow: hidden; 
+            text-overflow: ellipsis;  */
+            /* ye dono se jitna text dikhaya ja skta hai 
+            utna dikhega and or dots aa jayenge and  */
+
+            overflow-x: hidden;
+            /* iska mtlb ye hai ki jo text hai use neeche bejdo agr nhi ban rha  */
+            overflow-y: scroll;
+            /* dono indivualy handle kr rhe hai  */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and i love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, officiis nam? Expedita, possimus quos fuga distinctio libero, non eum maxime rerum iure tempore dolor fugiat veniam, enim voluptas esse maiores commodi. Beatae, ad cupiditate quod sunt totam veniam velit rerum est voluptates earum enim assumenda.
+    </div>
+</body>
+</html>
