@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        margin: 34px;
+        padding: 43px;
+        border: 3px solid black;
+        /* position: absolute; */
+        /* transform, filter, or persepective properties can also make en element appears as positioned */
+        /* position: relative; */
+        /* transform: translate(0); */
+        filter: invert(0);
+        /* now it is positioned */
+        /* perspective: oem; */
+    }
+    .box{
+        border: 2px solid black;
+        height: 550px;
+        width: 80vw;
+        margin: 3px;
+        padding: 3px;
+    }
+    .box1{
+        background-color: aqua;
+        position: sticky;
+        /* position: sticky; ka mtlb hai ki ye chipak jati hai  */
+        top: 0px;
+        height: 100px;
+        width: 70vw;
+        /* position: absolute;
+        top: 0px; */
+        /* iska matlb ye hai ki jo nearest ancestor hoga vha lag jayega jjiske pass position hai other than static in this case box1 has parent .parent but it has no position then go to body then head than html and html ke pass koi nhi hai toh html se top 0px se lag jayega */
+        /* now we have given the parent position then this box will stick to parent box with top 0px. */
+    }
+    .box2{
+        /* sabse pehle container ki position static hoti hai */
+        background-color: azure;
+        /* position: relative; Position relative hai hum iska posotion cahnge kr skte hai for example we can put a container over another container using the top left property  */
+        /* top: 88px; isse ye hoga jo container 2 tha wo upar chla jayega by 88px */
+        /* left: 67px; isse ye hoga ki jo container 2 hai wo 67 px left chla jayega isse first and second container overlap ho jayega */
+        /* so now the the azure container is on above the aqua conatainer and sometimes we need that the aqua container is on above the azure container so for this we use the z-index.  */
+    }
+    .box3{
+        background-color: antiquewhite;
+         /* z-index: 10; */
+        /* for using the z index we should not use potision static  */
+        /* position: fixed; */
+         /* iska matlb ye hai ki jo container ki position hai wo fix jo jayegi agr hum scroll bhi kr rhe hai toh bhi fix rhegi i=us position me  */
+        /* bottom: 0px;
+        left: 25vw; */
+    }
+    .box4{
+        background-color: purple;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+    </div>
+</body>
+</html>
