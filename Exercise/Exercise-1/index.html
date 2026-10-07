@@ -1,0 +1,89 @@
+<!-- In this exercise i am trying to make a card which contains a picture and below this some text-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making the Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{ 
+            position: relative;
+            top: 60px;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 70vh;
+            width: 50vh;
+        }
+        .img{
+            box-sizing: border-box;
+            /* border: 2px solid black; */
+            height: 30vh;
+            padding: 8px;
+            border-radius: 20px;
+            /* overflow: hidden;*/
+        }
+        .img img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            border-radius: 14px;   
+        }
+        .box1{
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 10px;
+            list-style: none;
+        }
+        .box1 li{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            width: 50px;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .box2{
+            padding: 20px;
+        }
+        .box3{
+            margin: auto;
+            width: 90%;
+            box-sizing: border-box;
+            padding: 15px;
+            height: 20vh;
+            overflow: auto;
+            border: 2px solid black;
+            border-radius: 14px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img">
+            <img src="image.png" alt="">
+        </div>
+        <div class="box1">
+            <li>City</li>
+            <li>Bridge</li>
+        </div>
+        <div class="box2">
+            <h1>Lago Di Braies</h1>
+        </div>
+        <div class="box3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum in numquam quia ratione, vitae corrupti, quos magni maiores molestiae odit maxime repellendus perspiciatis necessitatibus, dicta quam dolor fuga dolorem! Architecto maiores corporis voluptates inventore fugit! Odio illum magnam iusto delectus dolore fugit minima eligendi ut, hic culpa quia maxime, sit natus! Distinctio amet, dolor illum corrupti possimus accusantium! Sequi possimus, distinctio tenetur sed numquam doloribus commodi excepturi accusantium vero animi perspiciatis itaque minima atque velit impedit nihil? Molestias asperiores, nobis distinctio itaque architecto quae placeat quos repellendus dicta optio accusantium?</p>
+        </div>
+    </div>
+</body>
+</html>
