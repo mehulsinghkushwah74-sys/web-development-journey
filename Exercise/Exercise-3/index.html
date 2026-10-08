@@ -1,0 +1,50 @@
+<!-- In this exercise we are  trying to make  a navbar using global variable and css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;    
+    }
+    :root{
+        --color:blue;
+        --seccolor:red;
+        --border:black;
+    }
+    .nav{
+        height: 5vh;
+        width: 100vw;
+        border: 2px solid var(--border);
+        background-color: var(--color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        /* border: 2px solid black ; */
+    }
+    .nav ol{
+        margin-left: 50px;
+        display: flex;
+        gap: 70px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Login</li>
+        </ol>
+    </div>
+</body>
+</html>
