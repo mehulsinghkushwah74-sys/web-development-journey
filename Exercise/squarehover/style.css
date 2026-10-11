@@ -1,0 +1,62 @@
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gill Sans';
+    }
+    .shape{
+        margin-top: 10px;
+        margin-left: 10px;
+        /* margin: 10px 10px; first top left bottom them right */
+        height: 200px;
+        width: 200px;
+        border: 3px solid black  ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #square {
+        margin-bottom: 50px;
+        h1{
+            font-weight: 1000;
+        }
+    }
+    #square:hover{
+            background-color: red;
+    }
+    #rhombus{
+        rotate: 45deg; /* this is for the rotating the container. */
+        margin-top: 50px;
+    h1{
+        rotate: -45deg;
+        font-weight: 1000;
+    }
+    }
+    #rhombus:hover{
+        background-color: green;
+    }
+    #circle{
+        border-radius: 50%;
+        h1{
+            font-weight: 1000;
+        }
+    }
+    #circle:hover{
+        background-color: blue;
+    }
+    #box1{
+        width: 200px;
+        height: 200px; 
+    }

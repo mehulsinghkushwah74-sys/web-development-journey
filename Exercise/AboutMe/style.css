@@ -1,0 +1,324 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    height: 7%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    /* justify-content:space-around; */
+    align-items: center;
+    position: fixed;
+    background-color: #FFFFFF;
+    color: #172554;
+    border-bottom: 3px solid #a7b0c0;
+    /* box-shadow: 2px black; */
+    /* border-bottom: solid black; */
+
+    
+}
+#fakeheader{
+    height: 7%;
+    width: 100%;
+}
+#page1{
+    height: 45%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    
+}
+#leftpage{
+   height: 100%;
+   width: 50%;
+}
+#photo{
+   height: 100%;
+   width: 50%;
+   background-color: whitesmoke;
+}
+#page2{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(255, 144, 47);
+    display: flex;
+}
+.text{
+    margin-left: 40px;
+    margin-right: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    /* color: #172554; */
+
+}
+.text:hover{
+    /* color: #1D4ED8 */
+    color: rgb(0, 131, 254);
+}
+ #name{
+    font-size: larger;
+    margin-left: 40px;
+    margin-right: 70px;
+    /* font-family: 'Inter', sans-serif; */
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: #172554; */
+    /* color: rgb(0, 131, 254); */
+ }
+ #name:hover{
+   /* color: #172554; */
+   color: rgb(0, 131, 254);
+ }
+ #icon{
+    margin-left: 50px;
+ }
+ #salutation{
+    height: 25%;
+    width: 100%;
+    background-color:whitesmoke;
+    display: flex;
+   /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes content to the bottom */
+  /* height: 300px; Fixed height example */
+ }
+ #salutation h2{
+    margin-left: 50px;
+ }
+ #bigname{
+    height: 25%;
+    width: 100%;
+    background-color: whitesmoke;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+ }
+ #bigname h1{
+    margin-left: 50px;
+ }
+ #bigname p{
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ #text2{
+    height: 35%;
+    width: 100%;
+    background-color: whitesmoke;
+ }
+ #text2 p{
+    margin-left: 50px;
+    align-items: center;
+ }
+ #myicon{
+    margin-top: 10px;
+    height: 35px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+ }
+ 
+ #icon2{
+    /* margin-top: 15px; */
+    margin-left: 50px;
+    height: 30px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: medium;
+    border: solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: left; */
+ }
+ #icon2:hover{
+    background-color: rgb(0, 131, 254);
+ }
+ #icon3 {
+    height: 30px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: right; */
+    border: solid black;
+ }
+ #icon3:hover{
+    background-color: rgb(0, 131, 254);
+ }
+ #profile{
+    display: flex;
+    background-color: whitesmoke;
+    height: 15%;
+    width: 100%;
+    align-items: center;
+ }
+ .ic{
+    margin-left: 20px;
+    margin-bottom: 15px;
+ }
+ #github{
+    margin-left: 50px;
+ }
+ #photo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+#new{
+   height: 330px;
+   width: 400px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background-color: whitesmoke;
+}
+ #new img{
+   width: 100%;
+   height: 100%;
+   /* object-fit: cover; */
+   object-position: center;
+ }
+ #leftpage1{
+   height: 100%;
+   width: 50%;
+   background-color: whitesmoke;
+ }
+#rightpage{
+   height: 100%;
+   width: 50%;
+   background-color: whitesmoke;
+}
+#aboutme{
+   height: 10%;
+   width: 100%;
+   background-color:whitesmoke;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+}
+#aboutme h2{
+   margin-left: 100px;
+}
+#text3{
+   margin-top: 20px;
+   height: 100px;
+   width: 60%;
+   background-color: whitesmoke;
+   margin-left: 100px;
+}
+.ab{
+   margin-left: 100px;
+   margin-bottom: 30px;
+   display: flex;
+}
+#education{
+   display: flex;
+}
+#location{
+   display: flex;
+}
+#skills{
+   height: 10%;
+   width: 100%;
+   background-color: whitesmoke;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+}
+#skills h2{
+   margin-left: 180px;
+}
+#rightpage h3{
+   margin-left: 180px;
+   margin-top: 35px;
+}
+#page3{
+   height: 30px;
+   width: 100%;
+   background-color: whitesmoke;
+}
+#mypro{
+   height: 30px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* background-color: aqua; */
+}
+#page4{
+   height: 180px;
+   width: 100%;
+   background-color: whitesmoke;
+   display: flex;
+
+}
+.proj{
+   margin-left: 80px;
+   height: 130px;
+   width: 280px;
+   border-radius: 60%;
+   justify-content: space-between;
+   /* background-color: rgb(0, 131, 254); */
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+}
+.proj:hover{
+   background-color: rgb(0, 131, 254);
+}
+#pbox1{
+   margin-left: 100px;
+}
+
+/* #Home{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#About{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Skills{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Education{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Certificates{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Achievements{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Resume{
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+#Contacts{
+    margin-left: 10px;
+    margin-right: 10px;
+ } */

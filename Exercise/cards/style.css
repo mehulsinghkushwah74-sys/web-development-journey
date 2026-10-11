@@ -1,0 +1,92 @@
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        /* background-image:url(WhatsApp\ Image\ 2026-08-28\ at\ 9.04.16\ AM.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat; */
+    }
+
+    #main{
+        height: 100%;
+        width: 100%;
+        
+        /* display: flex;
+        align-items: center;
+        justify-content: center;  */
+        /* after using these 3 lines two container comes adjuscant sometimes we dont want it. */
+        /* but the position absolute bacha skti hai */
+    }
+    /* body{
+        /* background-image:url(WhatsApp\ Image\ 2026-08-28\ at\ 9.04.16\ AM.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat; */
+        /* height: 100%;
+        width: 100%; */
+        /* width: 500px;
+        height: 500px; */
+    .card{
+        /* background-color: rgb(85, 255, 0); */
+        position: absolute;
+        /* after giving the position absolute it means it does not depend on the parent's */
+        /* position absolute dene ke baad hum sab box ka position change kr skte hai */
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%,-50%); */
+        /* this is means that the center of the square is at -50%,-50% of the parents
+        and one of the corner is at origin */
+        height: 300px;
+        width: 230px;
+        border: 2px solid rgb(16, 16, 16);
+        border-radius: 20px;
+        overflow: hidden;
+
+    }
+    #box1{
+        z-index: 4;
+        /* ye is liye hai ki hume lage ki upar hai */
+        transform: translate(-50%,-50%) rotate(0deg);
+        /* background: red; */
+    }
+    #box1:hover{
+        z-index: 8;
+    }
+    #box2{
+        z-index: 3;
+         transform: translate(-50%,-50%) rotate(-7deg);
+        /* background: greenyellow; */
+    }
+    #box2:hover{
+        z-index: 8;
+    }
+    #box3{
+        z-index: 2;
+         transform: translate(-50%,-50%) rotate(-14deg);
+        /* background: salmon; */
+    }
+    #box3:hover{
+        z-index: 8;
+    }
+    #box4{
+        z-index: 1;
+         transform: translate(-50%,-50%) rotate(-21deg);
+        /* background: green; */
+    }
+    #box4:hover{
+        z-index: 8;
+    }
+        /* now if use transform translate the bow will rotate about one of the corner */
+        /* toh hum vhi display fex and align item and justify - content use krte ise wo radius se ghumta hai */
+    .image1{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* #bg1{
+        width: 50%;
+        height: 50%;
+    } */

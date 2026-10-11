@@ -1,0 +1,59 @@
+this also we can use for this experiment
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+    }
+    #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        /* after using these 3 lines two container comes adjuscant sometimes we dont want it. */
+        /* but the position absolute bacha skti hai */
+    }
+    .card{
+        /* background-color: rgb(85, 255, 0); */
+        position: absolute;
+        /* after giving the position absolute it means it does not depend on the parent's */
+        /* position absolute dene ke baad hum sab box ka position change kr skte hai */
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); */
+        /* this is means that the center of the square is at -50%,-50% of the parents
+        and one of the corner is at origin */
+        height: 300px;
+        width: 230px;
+        border: 2px solid salmon;
+        border-radius: 20px;
+
+    }
+    #box1{
+        z-index: 4;
+        /* ye is liye hai ki hume lage ki upar hai */
+        rotate: 0deg;
+        background: red;
+    }
+    #box2{
+        z-index: 3;
+        rotate: -7deg;
+        background: greenyellow;
+    }
+    #box3{
+        z-index: 2;
+        rotate: -14deg;
+        background: salmon;
+    }
+    #box4{
+        z-index: 1;
+        rotate: -21deg;
+        background: green;
+    }
+        /* now if use transform translate the bow will rotate about one of the corner */
+        /* toh hum vhi display fex and align item and justify - content use krte ise wo radius se ghumta hai */
