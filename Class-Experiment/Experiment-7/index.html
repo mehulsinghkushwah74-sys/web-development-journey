@@ -1,0 +1,77 @@
+<!-- In this lab experiment i am trying to create a webpage containing an HTML form for collecting basic user information.
+To use different form controls and labels appropriately. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h2>User Registration</h2>
+        <form action="data">
+        <fieldset class="personal"> 
+            <legend>Personal Details</legend>    
+            <div>
+                <label for="username">Full Name</label>
+                <input type="text" id="username" placeholder="Enter user name" name="name" value="">
+            </div>
+            <div>
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" placeholder="Enter Email" name="mail">
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="number" id="number" placeholder="Enter number">
+            </div>
+            <div>
+                <span>Gender</span>
+                <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
+                <label for="other"><input type="radio" name="gender" id="other" value="other">Others</label>
+            </div>
+        </fieldset>
+        <fieldset class="location">
+            <legend>Account & Location</legend>
+            <div>
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="in">India</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="indo">Indonesia</option>
+                </select>
+            </div>
+            <div>
+                <label for="address">Full Address</label>
+                <textarea name="address" id="address" rows="3" placeholder="Enter Address"></textarea>
+            </div>
+        </fieldset>
+        <fieldset class="pref">
+            <legend>Preferences</legend>
+            <div>
+                <label for="subscribe">Subscribe to this Website</label>
+                <input type="checkbox" name="subscribe" id="subscribe">
+            </div>
+            <div>
+                <label for="comment">Comments</label><br>
+                <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
