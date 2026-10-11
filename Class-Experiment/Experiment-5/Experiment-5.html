@@ -1,0 +1,205 @@
+<!-- In this lab experiment i am trying to make the time table of the class -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .heading {
+            text-align: center;
+            padding: 10px;
+        }
+        .caption {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: larger;
+            font-weight: 600;
+        }
+        table {
+            height: 600px;
+            width: 1400px;
+            border: 2px solid black;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            font-size: 18px;
+            line-height: 1.3;
+        }
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+        }
+        .head th {
+            height: 50px;
+            padding: 5px;
+        }
+        .head th:first-child {
+            width: 180px;
+            white-space: nowrap;
+        }
+        .table1 {
+            height: 300px;
+            margin-top: 100px;
+        }
+        .table1 tr {
+            height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading">Department of Computer Science</h2>
+    <table>
+        <caption class="caption">Weekly Class Schedule Semester-I</caption>
+        <thead>
+            <tr class="head">
+                <th>Day/Time</th>
+                <th>08:00 AM - 09:00 AM</th>
+                <th>09:00 AM - 10:00 AM</th>
+                <th>10:00 AM - 11:00 AM</th>
+                <th>11:00 AM - 12:00 PM</th>
+                <th>12:00 PM - 01:00 PM</th>
+                <th>01:00 PM - 02:00 PM</th>
+                <th>02:00 PM - 03:00 PM</th>
+                <th>03:00 PM - 04:00 PM</th>
+                <th>04:00 PM - 05:00 PM</th>
+                <th>05:00 PM - 06:00 PM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td></td>
+                <td colspan="2">ME105(L) <br> PB-FF-04</td>
+                <td colspan="2">AM101 (L) <br> PB-FF-04</td>
+                <td></td>
+                <td colspan="2">CO101 (P G1) / CS103 (PG2) <br>CO101: Programming Lab AB4-B06</td>
+                <td colspan="2">Lab_G1_CF LAB_PhD2 <br>
+                    EC101_Lab_G2_EDC-I LAB_SK <br>
+                    EC101_Lab_G3_BE LAB_RK</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="2">AEC/VAC</td>
+                <td></td>
+                <td></td>
+                <td colspan="2">ME 105 (P) <br> PB-FF-04</td>
+                <td colspan="2">EC101 (L) <br> PB-FF-04</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td></td>
+                <td></td>
+                <td colspan="2">CO101 (L) <br> PB-FF-04</td>
+                <td> AM101 (T G1/G2) <br>PB-FF-04</td>
+                <td></td>
+                <td>CO101 (P G2) / CS103 (PG3) <br> CO101: Programming Lab <br>AB4-B06 </td>
+                <td>CO101 (P G2) / CS103 (PG3)<br> CS103: [IS & CI Lab Lab] <br> AB3-716</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td colspan="2">AEC/VAC</td>
+                <td>CO101 (P G3) / CS103 (P G1) <br> CO101: Programming Lab AB4-B06</td>
+                <td>CO101 (P G3) / CS103 (P G1) <br> CS103: [IS & CI Lab Lab] AB3-716</td>
+                <td></td>
+                <td></td>
+                <td>EC101 (L) <br> PB-FF-04</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td></td>
+                <td>AM101 (L) <br> PB-FF-04</td>
+                <td>ME105 (L) <br> PB-FF-04</td>
+                <td>CS103 (L) <br> PB-FF-04</td>
+                <td>CO101 (L) <br> PB-FF-04</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table1">
+        <tr>
+            <td>Subject Code</td>
+            <td>Subject Name</td>
+            <td>Lecture(L)</td>
+            <td>Tutorial(T)</td>
+            <td>Pratical(P)</td>
+            <td>Faculty</td>
+            <td>Email ID</td>
+        </tr>
+        <tr>
+            <td>AM 101</td>
+            <td>MATHEMATICS-I</td>
+            <td>3</td>
+            <td>1</td>
+            <td>0</td>
+            <td>Dr.Mamta Rani</td>
+            <td><a href="mamta11singla@gmail.com">mamta11singla@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>CO 101</td>
+            <td>PROGRAMMING FUNDAMENTALS</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+            <td>Dr.Anurag Goyal</td>
+            <td><a href="anurag@dtu.ac.in">anurag@dtu.ac.in</a></td>
+        </tr>
+        <tr>
+            <td>EC101</td>
+            <td>BASIC ELECTRONICS & COMMUNICATION ENGINEERING</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+            <td>Prof.O.P Verma</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ME 105</td>
+            <td>COMPUTER AIDED ENGINEERING GRAPHICS-2</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+            <td>Prof.Kapil Kumar</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>CS 103</td>
+            <td>WEB DESIGNING</td>
+            <td>1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>Mr.Ravikant Gupta</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>AEC/VAC</td>
+            <td>AS SELECTED</td>
+            <td>2/1/0</td>
+            <td>0/2/4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
