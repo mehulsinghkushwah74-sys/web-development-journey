@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.navbar{
+    margin: 0 auto;
+    background-color: antiquewhite;
+    width: 80%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 200px;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 20px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    gap: 2rem;
+    list-style: none;
+}
