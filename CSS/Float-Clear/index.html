@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+    .cards{
+        border: 2px solid black;
+    }
+    .card{
+        border: 2px solid black;
+    }
+    .card :nth-child(3){
+        background-color: aqua;
+        clear: right;
+        /* clear kehta hai ki mere nhh idhar side nh dikhna for example clear: right; means that the third child of the div will not allowed the float image in right side of the div but it will allowed in left */
+    }
+    img{
+        float: left; /* now ye ab apne left side ke space to allow kr dega content ke liye  */
+    }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="230px" src="boxstyle.png" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium fuga voluptatem ab natus ipsum recusandae. Blanditiis consequuntur, adipisci et debitis labore, non praesentium laudantium natus molestias ad fugiat deleniti dolore!</p>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo vel, nobis, incidunt, debitis consequatur fuga esse autem praesentium voluptate dolorum ducimus reiciendis! Deleniti fugit repellendus maxime voluptas officia, aut expedita. Reiciendis perspiciatis tenetur, laborum beatae culpa quo necessitatibus consectetur? Eos, ea, odio consequuntur, voluptate neque aperiam necessitatibus laudantium incidunt aspernatur sint delectus officiis eum laboriosam atque illum repellat qui sapiente exercitationem quae perspiciatis quis alias esse id iste? Eveniet ut fugit quidem recusandae placeat modi dolore deserunt eum accusantium, possimus, distinctio, ipsam quibusdam dolores. Pariatur exercitationem blanditiis tempore consequatur fuga? Iusto excepturi qui quae recusandae voluptas assumenda, pariatur veritatis minima praesentium consequuntur enim eum id? Voluptatum nesciunt inventore veritatis consequuntur perferendis quae obcaecati aspernatur aliquid corporis. Distinctio magnam inventore id cum suscipit impedit sit possimus molestias cumque expedita commodi, labore obcaecati sunt consectetur fuga quia, rem placeat veritatis nostrum explicabo tenetur! Natus repellendus, assumenda, rem atque quae unde ea tenetur amet incidunt accusantium eligendi impedit deleniti aut, sapiente ullam sunt. Voluptatibus maiores ipsam veritatis facere possimus non exercitationem consequuntur numquam voluptate dolor quod dicta expedita, asperiores ipsum mollitia nihil eligendi esse nobis distinctio harum inventore? Nihil placeat repudiandae laudantium blanditiis. Laborum, fugiat provident. Ratione cumque fugiat ipsam voluptate recusandae ex perspiciatis explicabo, amet laborum necessitatibus tenetur sunt nihil at labore vel dolor sit totam qui nemo, optio quod possimus consectetur? Incidunt tempore ducimus sunt blanditiis maiores mollitia illo fugit nemo vel beatae molestiae, doloribus veniam odit libero, recusandae explicabo illum fugiat, saepe velit nisi hic totam nesciunt. Rerum at fugit rem ipsum dolores iure. Eveniet consequatur architecto beatae neque. Incidunt, repudiandae dignissimos corrupti rem fugit asperiores aliquam, impedit totam possimus dicta quasi ab magnam dolores quia dolorem perspiciatis ratione labore, aperiam repellendus quam quos! Nostrum ex iure tempora, accusantium explicabo, natus, commodi ratione iusto deserunt sint asperiores? At temporibus pariatur ea excepturi, minus similique laboriosam veniam blanditiis porro optio expedita cumque alias hic est sapiente debitis sint voluptate soluta tempore.</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{ 
+            this means selected the first child of box 
+            background-color: red;
+        } */
+        .box::first-letter {
+            color: red;
+        }
+        .boxes *{
+            /* It means that select all the content inside boxes and apply this to all  */
+            background-color: rgb(0, 229, 255);
+            border: 2px solid black;
+        }
+        /* [data-color = "primary"]{
+            it means where the data-color = "primary" is present then give it a margin top of 45px
+            margin-top: 45px;
+        } */
+         /* .box:nth-child(even){
+            it means that the even number child will get orange color and it starts count from the 1
+            color: orange;
+         } */
+        /* .boxes::before{
+            it means that from the child of the boxes use content: Mehul is good;
+            content: "Mehul is good";
+        } */
+        /* .boxes::after{
+        same like before but it print after the last child
+        content: "Mehul is good";
+        } */
+        /* .boxes::selection{
+            it means that when we select something on boxes than perform these CSS style
+            color: aqua;
+            background-color: black;
+        } */
+        input::placeholder{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box</div>
+        <div data-color="primary" class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <label for="name">Enter your name here</label>
+        <input type="text" id="name" placeholder="type your name here" name="name" > 
+    </div>
+</body>
+</html>
