@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container{
+            /* width: 80vw; */
+            /* width: 90vh; */
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas:"nav nav nav" 
+                                "side article article"
+                                "footer footer footer";
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(4,1fr); /* iska matlb hai ki 1fr ko 4 bar rapeat ke do 4 column  */
+            /* row-gap: 20px;
+            /* column-gap: 20px; */
+            /* justify-items: center;
+            align-items: center; */ 
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        .item1{
+            grid-area: nav;
+            /* align-self: start;
+            justify-self: center; */
+        }
+        .item2{
+            grid-area: side;
+        }
+        .item3{
+            grid-area: article;
+        }
+        .item4{
+            grid-area: footer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>
