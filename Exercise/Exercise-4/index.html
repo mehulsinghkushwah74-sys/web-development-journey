@@ -1,0 +1,130 @@
+<!-- In this exercise we are trying to form some navbar,boxes and footer  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .logo{
+            position: fixed;
+            right: 90%;
+            bottom: ;
+            z-index: 10000;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: baseline;
+            justify-content: baseline;
+        } */
+        .nav{
+            top: 0%;
+            position: sticky; 
+            /* to use the sticky first we have to use the top 0%  */
+            width: 100%;
+            height: 10vh;
+            box-sizing: border-box;
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+            gap: 100px;
+            /* background-color: antiquewhite; */
+            z-index: 100;
+            backdrop-filter: blur(5px);   
+        }
+        .nav ul{
+            display: flex;
+            justify-content: center;
+            gap: 90px;            
+        }
+        .nav h4{
+            margin-left: 40px;
+        }
+        .box{
+            box-sizing: border-box;
+            height: 60vh;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            
+            
+        }
+        .st{
+            margin: auto;
+            height: 50vh;
+            width: 40%;
+            border: 2px solid black;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        /* NOTE : IF YOU WANT FIX THE IMAGE IN A CONTAINER THAN GIVE THE HEIGHT AND WIDTH THE IMAGE SAME AS CONTAINER AND USE THE OVERFLOW HIDDEN IN CONTAINER  */
+        .st img{
+            height: 100%;
+            width: 100%;
+            /* object-fit: cover; Resizes to fill; clips overflow  */
+            /* object-position: center; keeps the center of the image visible */
+            
+            
+        }
+        .boxe1{
+            box-sizing: border-box;
+            height: 30vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* border: 2px solid black; */
+        }
+        .wel{
+            margin: auto;
+            height: 20vh;
+            width: 70%;
+            border-radius: 10px;
+            border: 2px solid black;
+            /* text-align: center; */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .footer{
+            box-sizing: border-box;
+            padding: 30px;
+            /* border: 2px solid black; */
+            height: 5vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="nav">
+        <h4>Mehul</h4>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Login</li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="box1 st">
+            <img src="photo.png" alt="">
+        </div>
+        <div class="box2 st"></div>
+    </div>
+    <div class="boxe1">
+        <div class="wel">
+            <h3>Hello My name is Mehul Singh Kushwah</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4>Thanks for your support</h4>
+    </footer>
+</body>
+</html>
