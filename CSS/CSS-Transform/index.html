@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformation</title>
+    <style>
+        *{
+            /* margin: 0; */
+            /* padding: 0; */
+            box-sizing: border-box;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); after applying this property the box will rotate 40 degree about the center of the box in clockwise direction */
+            /* transform: rotate(0.125turn);  */
+            /* After this it will turn 90deg because 1 turn means 360 deg */
+            /* transform: rotateX(10deg); rotate about x axia */
+            /* transform: rotateY(40deg); rotate about y axis*/
+
+            /* transform-origin: 0% 0%;
+            isse box ek corner ke about gumne lagega */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: scale(1.6);
+            it means the after that the size of the container will inc by 1.6 */
+            /* transform: scaleY(1.5);
+            scale in y */
+            /* transform: scale(2);
+            scale in x */
+
+            /* transform: skew();
+            transform: skewX();
+            transform: skewY(); */
+
+            /* transform: translateX(300px); */
+            /* it means shift in x axis by 300px */
+            /* transform: translateY(789px);
+            shift in y axis */
+        }
+        .container{
+            height: 100vh;
+            width: 80vw;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
